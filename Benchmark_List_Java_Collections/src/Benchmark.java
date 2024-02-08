@@ -30,7 +30,7 @@ public class Benchmark {
         int i;
 
         //Laço de repetição para efetuar a inserção de 10000000 números na implementação de lista
-        for(i = 0; i <= 10000000; ++i) {
+        for(i = 0; i < 10000000; ++i) {
             listBenchmark.add(rand.nextInt(100));
         }
 
@@ -42,7 +42,7 @@ public class Benchmark {
         tempoInicial = System.currentTimeMillis();
 
         //Laço de repetição para efetuar a busca de 100000 números na implementação de lista
-        for(i = 0; i <= 100000; ++i) {
+        for(i = 0; i < 100000; ++i) {
             listBenchmark.contains(rand.nextInt(100));
         }
 
